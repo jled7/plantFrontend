@@ -1,0 +1,32 @@
+<div id="connectForm" *ngIf="!connecting">
+  <div class="alert alert-danger" role="alert" *ngIf="errors">
+    <p>
+      <b>Login Error!</b> {{error}}</p>
+  </div>
+  <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="form-group">
+          <label for="password">Enter your credentials:</label>
+          <br /><br />
+          <div class="input-group">
+            <input type="password" class="form-control" name="password" placeholder="********" ngModel>
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="submit">Login</button>
+            </span>
+          </div>
+          <!-- /input-group -->
+        </div>
+        <!-- Form group -->
+      </div>
+      <!-- /.col-lg-6 -->
+    </div>
+  </form>
+</div>
+<div id="connecting" *ngIf="connecting">
+  <br/>
+  <br/>
+  <img src="/assets/img/loading.gif" />
+  <br />
+  <p>Login to {{ ipAddress }}...</p>
+</div>

@@ -1,0 +1,12 @@
+#connecting {
+    width:100%;
+}
+ 
+#connecting p{
+   text-align: center;
+}
+ 
+#connecting img {
+    display:block;
+    margin:0 auto;
+}

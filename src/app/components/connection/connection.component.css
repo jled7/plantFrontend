@@ -1,0 +1,32 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 500px;
+  height: 400px;
+  background-image: url('/assets/img/void.png');
+  background-repeat: repeat;
+  -moz-box-shadow: 0 0 10px #000;
+  -webkit-box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px #000;
+  overflow: hidden;
+  padding:50px;
+}
+.bodyContainer {
+  position:absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: url('/assets/img/loginBackground.jpeg') no-repeat center center;
+  background-size: cover;
+}
+
+h2 {
+  text-align: center;
+}
+ 
+hr {
+  border:1px solid #a0a0a0b4;
+}
